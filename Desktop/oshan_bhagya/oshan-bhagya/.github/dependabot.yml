@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/Desktop/oshan_bhagya/oshan-bhagya"
+    directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
