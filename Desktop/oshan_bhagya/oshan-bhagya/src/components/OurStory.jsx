@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 // Use available public images for story section
-const storyImages = ["/g12.jpeg", "/g11.jpeg", "/g13.png", "/g15.png"];
+const storyImages = ["/g8.png", "/g11.jpeg", "/g13.png", "/g15.png"];
 
 export default function OurStory() {
   return (
@@ -40,13 +40,15 @@ export default function OurStory() {
           viewport={{ once: true, amount: 0.2 }}
           className="relative"
         >
-          <img
-            src={storyImages[0]}
-            alt="Our story first moment"
-            className="h-[600px] w-full rounded-[40px] object-cover shadow-2xl"
-          />
+          <div className="relative h-[300px] overflow-hidden rounded-[40px] shadow-2xl">
+            <img
+              src={storyImages[0]}
+              alt="Our story first moment"
+              className="h-[600px] w-full object-cover object-top"
+            />
 
-          <div className="absolute inset-0 rounded-[40px] border border-yellow-500/20" />
+            <div className="absolute inset-0 rounded-[40px] border border-yellow-500/20" />
+          </div>
         </motion.div>
 
         <motion.div
