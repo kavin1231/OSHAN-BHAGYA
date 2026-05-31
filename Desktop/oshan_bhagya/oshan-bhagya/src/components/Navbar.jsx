@@ -35,12 +35,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href="#rsvp"
-          className="rounded-full bg-gradient-to-r from-yellow-400 to-yellow-700 px-5 py-2 font-semibold text-black transition hover:scale-105 hover:shadow-[0_16px_40px_rgba(212,175,55,0.25)]"
-        >
-          Save the Date
-        </a>
+        {/* Save the Date button removed per request */}
       </div>
     </motion.nav>
   );
