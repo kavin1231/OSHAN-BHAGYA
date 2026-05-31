@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+.clip-path-triangle {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
