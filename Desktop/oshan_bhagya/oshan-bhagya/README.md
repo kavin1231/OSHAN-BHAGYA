@@ -14,3 +14,14 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Security
+
+This project includes a basic browser security policy, GitHub security reporting guidance, and Dependabot updates for npm dependencies.
+
+Before publishing changes, also enable these GitHub repository settings manually:
+
+- Secret scanning
+- Push protection
+- Branch protection on `main`
+- Required PR reviews before merge
