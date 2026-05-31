@@ -25,3 +25,21 @@ Before publishing changes, also enable these GitHub repository settings manually
 - Push protection
 - Branch protection on `main`
 - Required PR reviews before merge
+
+## Deployment (Vercel)
+
+This project can be deployed to Vercel as a static site. I added a `vercel.json` config so Vercel will run `npm run build` and serve the `dist` directory.
+
+To deploy:
+
+1. Push the branch to GitHub (already done for `main`).
+2. Import the repository in Vercel (https://vercel.com/import) and select the `main` branch.
+3. Use the default build command `npm run build` and output directory `dist` (these are set in `vercel.json`).
+
+Alternatively, deploy from local with the Vercel CLI:
+
+```
+npx vercel --prod
+```
+
+After deployment, Vercel will provide a production URL where your site is hosted.
