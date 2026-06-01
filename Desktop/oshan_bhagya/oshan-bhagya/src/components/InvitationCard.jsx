@@ -93,6 +93,17 @@ export default function InvitationCard({
           </p>
         </div>
       </div>
+
+      <div className="mt-8 rounded-[24px] border border-white/10 bg-black/10 p-5 text-center">
+        <p className="text-xs uppercase tracking-[0.32em] text-white/60">
+          RSVP — REGRETS ONLY
+        </p>
+        <p className="mt-3 text-lg text-white/90">
+          Bhagya - 0704175818
+          <br />
+          Oshan - 0768679813
+        </p>
+      </div>
     </motion.section>
   );
 }
