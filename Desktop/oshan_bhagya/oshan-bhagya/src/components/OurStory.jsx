@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 // Use available public images for story section
-const storyImages = ["/g8.png", "/g11.jpeg", "/g13.png", "/g15.png"];
+const storyImages = ["/a1.png", "/a4.jpeg", "/a6.png", "/a8.png"];
 
 export default function OurStory() {
   return (

@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 const galleryImages = [
   // replaced g2 -> g10
   {
-    image: "/g10.jpeg",
+    image: "/a3.jpeg",
     title: "Golden Sunset",
     caption: "A warm close to the day",
   },
   // replaced g4 (tall) -> g11 (keep tall)
   {
-    image: "/g11.jpeg",
+    image: "/a4.jpeg",
     title: "Quiet Moments",
     caption: "Small moments, big love",
     tall: true,
   },
   // replaced g5 -> g12
-  { image: "/g12.jpeg", title: "Laughter & Light", caption: "Where joy lives" },
+  { image: "/a5.jpeg", title: "Laughter & Light", caption: "Where joy lives" },
   // replaced g7 -> g13
-  { image: "/g13.png", title: "Hand in Hand", caption: "Together we go" },
+  { image: "/a6.png", title: "Hand in Hand", caption: "Together we go" },
   // replaced g8 -> g14
-  { image: "/g14.png", title: "Whispers", caption: "Secrets between two" },
+  { image: "/a7.png", title: "Whispers", caption: "Secrets between two" },
   // keep the additional new images
-  { image: "/g15.png", title: "Promise", caption: "A vow beneath the sky" },
-  { image: "/g8.png", title: "Nostalgia", caption: "A candid of us" },
+  { image: "/a8.png", title: "Promise", caption: "A vow beneath the sky" },
+  { image: "/a1.png", title: "Nostalgia", caption: "A candid of us" },
   {
-    image: "/g16.png",
+    image: "/a9.png",
     title: "Forever",
     caption: "This is our always",
     tall: true,
@@ -38,7 +38,7 @@ const uniqueGalleryImages = galleryImages.filter(
 
 // Show only the requested highlight images
 const displayGalleryImages = uniqueGalleryImages.filter((item) =>
-  ["/g10.jpeg", "/g15.png", "/g16.png"].includes(item.image),
+  ["/a3.jpeg", "/a8.png", "/a9.png"].includes(item.image),
 );
 
 export default function Gallery() {

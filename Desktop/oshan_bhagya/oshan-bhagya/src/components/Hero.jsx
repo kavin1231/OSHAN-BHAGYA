@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Hearts from "./Hearts";
 
 const slides = [
-  { image: "/g10.jpeg", position: "center 24%" },
-  { image: "/g11.jpeg", position: "center 35%" },
-  { image: "/g12.jpeg", position: "center 18%" },
-  { image: "/g13.png", position: "center 28%" },
-  { image: "/g14.png", position: "center 22%" },
-  { image: "/g15.png", position: "center 30%" },
-  { image: "/g16.png", position: "center 26%" },
-  { image: "/g8.png", position: "center 24%" },
+  { image: "/a3.jpeg", position: "center 24%" },
+  { image: "/a4.jpeg", position: "center 35%" },
+  { image: "/a5.jpeg", position: "center 18%" },
+  { image: "/a6.png", position: "center 28%" },
+  { image: "/a7.png", position: "center 22%" },
+  { image: "/a8.png", position: "center 30%" },
+  { image: "/a9.png", position: "center 26%" },
+  { image: "/a1.png", position: "center 24%" },
 ];
 
 export default function Hero() {
