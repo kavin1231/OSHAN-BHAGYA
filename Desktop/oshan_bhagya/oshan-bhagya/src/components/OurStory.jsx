@@ -79,12 +79,12 @@ export default function OurStory() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: index * 0.08 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="rounded-[22px] border border-yellow-500/20 bg-white/[0.04] p-2 shadow-lg"
+              className="overflow-hidden rounded-[22px] border border-yellow-500/20 bg-white/[0.04] shadow-lg"
             >
               <img
                 src={image}
                 alt={`Story moment ${index + 1}`}
-                className="h-40 w-full rounded-[14px] bg-black/30 object-contain p-1 sm:h-48"
+                className="h-56 w-full object-cover sm:h-72"
               />
             </motion.div>
           ))}

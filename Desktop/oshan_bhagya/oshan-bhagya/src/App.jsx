@@ -11,6 +11,7 @@ import Music from "./components/Music";
 // RSVP and Share removed from page per request
 import Reactions from "./components/Reactions";
 import FooterQuote from "./components/FooterQuote";
+import Footer from "./components/Footer";
 import InvitationForm from "./components/InvitationForm";
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
           <FooterQuote />
           <Music play={musicActive} />
           <Reactions />
+          <Footer />
         </>
       ) : null}
     </div>
