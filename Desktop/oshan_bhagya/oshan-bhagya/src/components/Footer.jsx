@@ -1,6 +1,9 @@
+import { memo } from "react";
 import { FaHeart, FaPhoneAlt } from "react-icons/fa";
 
-export default function Footer() {
+const CURRENT_YEAR = new Date().getFullYear();
+
+function Footer() {
   return (
     <footer className="relative border-t border-yellow-500/20 bg-black px-6 py-12">
       <div className="absolute inset-0 bg-yellow-500/5 blur-3xl" />
@@ -11,7 +14,10 @@ export default function Footer() {
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
           Oshan{" "}
-          <FaHeart className="mx-1 inline-block align-middle text-pink-400" />{" "}
+          <FaHeart
+            aria-hidden="true"
+            className="mx-1 inline-block align-middle text-pink-400"
+          />{" "}
           Bhagya
         </h3>
 
@@ -29,7 +35,7 @@ export default function Footer() {
           <p className="text-lg font-medium text-yellow-400">Invitations.lk</p>
 
           <div className="flex items-center justify-center gap-2 text-white/70">
-            <FaPhoneAlt className="text-yellow-400" />
+            <FaPhoneAlt aria-hidden="true" className="text-yellow-400" />
             <span>077 473 6449</span>
           </div>
 
@@ -37,9 +43,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 text-sm text-white/40">
-          © {new Date().getFullYear()} Invitations.lk • All Rights Reserved
+          © {CURRENT_YEAR} Invitations.lk • All Rights Reserved
         </div>
       </div>
     </footer>
   );
 }
+
+export default memo(Footer);

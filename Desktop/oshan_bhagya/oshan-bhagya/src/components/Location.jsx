@@ -20,7 +20,7 @@ export default function Location({
       <div className="grid gap-5 lg:grid-cols-[1.05fr_1fr]">
         <div className="relative overflow-hidden rounded-[28px] border border-white/10">
           <img
-            src="/a1.jpeg"
+            src="/venue.jpeg"
             alt="Venue"
             className="h-full min-h-[280px] w-full object-cover"
           />
