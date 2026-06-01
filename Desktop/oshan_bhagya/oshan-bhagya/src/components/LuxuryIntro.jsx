@@ -73,13 +73,15 @@ export default function LuxuryIntro({ onOpen }) {
             Wedding Invitation
           </p>
 
-          <h1 className="mt-8 text-6xl font-serif text-white md:text-7xl">
+          <h1 className="font-wedding-script mt-8 text-6xl text-white md:text-7xl">
             Oshan
           </h1>
 
           <div className="my-4 text-3xl text-yellow-400">&</div>
 
-          <h1 className="text-6xl font-serif text-white md:text-7xl">Bhagya</h1>
+          <h1 className="font-wedding-script text-6xl text-white md:text-7xl">
+            Bhagya
+          </h1>
 
           <div className="mx-auto mt-8 h-[1px] w-24 bg-yellow-400" />
 

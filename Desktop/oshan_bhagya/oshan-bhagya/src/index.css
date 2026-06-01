@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import "tailwindcss";
 @import "./styles/theme.css";
+
+.font-wedding-script {
+  font-family: "Great Vibes", cursive;
+}
 
 .clip-path-triangle {
   clip-path: polygon(0 0, 50% 100%, 100% 0);

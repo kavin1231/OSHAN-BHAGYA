@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 
 // Use available public images for story section
-const storyImages = ["/a1.png", "/a4.jpeg", "/a6.png", "/a8.png"];
+const storyImages = [
+  "/a4.jpeg",
+  "/a6.jpeg",
+  "/a8.jpeg",
+  "/a9.jpeg",
+  "/a10.jpeg",
+  "/a12.jpeg",
+];
 
 export default function OurStory() {
   return (
@@ -32,30 +39,13 @@ export default function OurStory() {
         <div className="mx-auto mt-8 h-px w-28 bg-yellow-400" />
       </motion.div>
 
-      <div className="mx-auto mt-24 grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
+      <div className="mx-auto mt-24 grid max-w-6xl items-start gap-12 px-6 lg:grid-cols-[1.05fr_1fr]">
         <motion.div
-          initial={{ opacity: 0, x: -80 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="relative"
-        >
-          <div className="relative h-[300px] overflow-hidden rounded-[40px] shadow-2xl">
-            <img
-              src={storyImages[0]}
-              alt="Our story first moment"
-              className="h-[600px] w-full object-cover object-top"
-            />
-
-            <div className="absolute inset-0 rounded-[40px] border border-yellow-500/20" />
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
+          className="rounded-[32px] border border-white/10 bg-white/[0.03] p-7 backdrop-blur-lg"
         >
           <p className="text-lg leading-9 text-white/70">
             Every love story is beautiful, but ours is our favorite.
@@ -80,57 +70,25 @@ export default function OurStory() {
             </p>
           </div>
         </motion.div>
-      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="mx-auto mt-28 max-w-5xl px-6"
-      >
-        <div className="relative overflow-hidden rounded-[40px]">
-          <img
-            src={storyImages[1]}
-            alt="Another story moment"
-            className="h-[500px] w-full object-cover transition duration-700 hover:scale-105"
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-
-          <div className="absolute bottom-10 left-10">
-            <h3
-              className="text-4xl"
-              style={{ fontFamily: "Cormorant Garamond, serif" }}
+        <div className="grid grid-cols-2 gap-4 sm:gap-5">
+          {storyImages.map((image, index) => (
+            <motion.div
+              key={image}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.08 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="rounded-[22px] border border-yellow-500/20 bg-white/[0.04] p-2 shadow-lg"
             >
-              Forever Starts Here
-            </h3>
-
-            <p className="mt-3 text-white/70">
-              07 August • Pabavee Regency • Gampaha
-            </p>
-          </div>
+              <img
+                src={image}
+                alt={`Story moment ${index + 1}`}
+                className="h-40 w-full rounded-[14px] bg-black/30 object-contain p-1 sm:h-48"
+              />
+            </motion.div>
+          ))}
         </div>
-      </motion.div>
-
-      <div className="mx-auto mt-10 grid max-w-6xl gap-5 px-6 sm:grid-cols-2 xl:grid-cols-4">
-        {storyImages.slice(2).map((image, index) => (
-          <motion.div
-            key={image}
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.08 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="relative overflow-hidden rounded-[28px] border border-white/10"
-          >
-            <img
-              src={image}
-              alt={`Story moment ${index + 3}`}
-              className="h-56 w-full object-cover transition duration-700 hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-transparent" />
-          </motion.div>
-        ))}
       </div>
     </section>
   );

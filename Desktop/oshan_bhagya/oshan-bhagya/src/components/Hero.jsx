@@ -7,11 +7,11 @@ const slides = [
   { image: "/a3.jpeg", position: "center 24%" },
   { image: "/a4.jpeg", position: "center 35%" },
   { image: "/a5.jpeg", position: "center 18%" },
-  { image: "/a6.png", position: "center 28%" },
-  { image: "/a7.png", position: "center 22%" },
-  { image: "/a8.png", position: "center 30%" },
-  { image: "/a9.png", position: "center 26%" },
-  { image: "/a1.png", position: "center 24%" },
+  { image: "/a6.jpeg", position: "center 28%" },
+  { image: "/a7.jpeg", position: "center 22%" },
+  { image: "/a8.jpeg", position: "center 30%" },
+  { image: "/a9.jpeg", position: "center 26%" },
+  { image: "/a1.jpeg", position: "center 24%" },
 ];
 
 export default function Hero() {
@@ -57,10 +57,7 @@ export default function Hero() {
         <p className="mb-4 text-xs uppercase tracking-[0.45em] text-yellow-300/90">
           Wedding Invitation
         </p>
-        <h1
-          className="text-6xl leading-tight text-white md:text-8xl"
-          style={{ fontFamily: "Cormorant Garamond, serif" }}
-        >
+        <h1 className="font-wedding-script text-6xl leading-tight text-white md:text-8xl">
           Oshan <span className="text-yellow-300">❤️</span> Bhagya
         </h1>
         <p

@@ -18,9 +18,9 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
           href="#hero"
-          className="text-xl font-bold tracking-[0.22em] text-white uppercase"
+          className="text-lg font-semibold uppercase tracking-[0.28em] text-white md:text-xl"
         >
-          OSHAN & BHAGYA Weddings
+          Oshan & Bhagya Weddings
         </a>
 
         <div className="hidden gap-8 text-sm text-white/70 md:flex">
