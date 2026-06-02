@@ -3,34 +3,34 @@ import { motion } from "framer-motion";
 const galleryImages = [
   // replaced g2 -> g10
   {
-    image: "/a3.jpeg",
+    image: "/a3.webp",
     title: "Golden Sunset",
     caption: "A warm close to the day",
   },
   // replaced g4 (tall) -> g11 (keep tall)
   {
-    image: "/a4.jpeg",
+    image: "/a4.webp",
     title: "Quiet Moments",
     caption: "Small moments, big love",
     tall: true,
   },
   // replaced g5 -> g12
-  { image: "/a5.jpeg", title: "Laughter & Light", caption: "Where joy lives" },
+  { image: "/a5.webp", title: "Laughter & Light", caption: "Where joy lives" },
   // replaced g7 -> g13
-  { image: "/a6.jpeg", title: "Hand in Hand", caption: "Together we go" },
+  { image: "/a6.webp", title: "Hand in Hand", caption: "Together we go" },
   // replaced g8 -> g14
-  { image: "/a7.jpeg", title: "Whispers", caption: "Secrets between two" },
+  { image: "/a7.webp", title: "Whispers", caption: "Secrets between two" },
   // keep the additional new images
-  { image: "/a8.jpeg", title: "Promise", caption: "A vow beneath the sky" },
-  { image: "/a1.jpeg", title: "Nostalgia", caption: "A candid of us" },
+  { image: "/a8.webp", title: "Promise", caption: "A vow beneath the sky" },
+  { image: "/a1.webp", title: "Nostalgia", caption: "A candid of us" },
   {
-    image: "/a9.jpeg",
+    image: "/a9.webp",
     title: "Forever",
     caption: "This is our always",
     tall: true,
   },
   // add a11 for Moments of Love display
-  { image: "/a11.jpeg", title: "Cherished", caption: "A captured memory" },
+  { image: "/a11.webp", title: "Cherished", caption: "A captured memory" },
 ];
 
 // Ensure duplicates (by filename) are removed at render-time in case public/ changes
@@ -41,7 +41,7 @@ const uniqueGalleryImages = galleryImages.filter(
 // Show only the requested highlight images
 // include a11 in the highlighted set so it shows alongside the three cards
 const displayGalleryImages = uniqueGalleryImages.filter((item) =>
-  ["/a3.jpeg", "/a8.jpeg", "/a9.jpeg", "/a11.jpeg"].includes(item.image),
+  ["/a3.webp", "/a8.webp", "/a9.webp", "/a11.webp"].includes(item.image),
 );
 
 export default function Gallery() {

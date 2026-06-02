@@ -35,7 +35,7 @@ export default function LuxuryIntro({ onOpen }) {
         transition={{ duration: 1.2 }}
       >
         <img
-          src="/a3.jpeg"
+          src="/a3.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-20 blur-sm"
