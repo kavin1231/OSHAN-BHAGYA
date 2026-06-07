@@ -6,7 +6,7 @@ import InvitationCard from "./components/InvitationCard";
 import Location from "./components/Location";
 import Countdown from "./components/Countdown";
 import OurStory from "./components/OurStory";
-import Gallery from "./components/Gallery";
+
 import Music from "./components/Music";
 // RSVP and Share removed from page per request
 import Reactions from "./components/Reactions";
@@ -36,7 +36,7 @@ export default function App() {
             <OurStory />
             <Location />
           </div>
-          <Gallery />
+
           <Countdown />
           <InvitationForm
             formUrl={
