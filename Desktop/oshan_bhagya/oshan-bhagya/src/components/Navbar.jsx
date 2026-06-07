@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
 const links = [
-  { label: "Home", href: "#hero" },
   { label: "Details", href: "#details" },
   { label: "Gallery", href: "#gallery" },
-  { label: "RSVP", href: "#rsvp" },
+  
 ];
 
 export default function Navbar() {

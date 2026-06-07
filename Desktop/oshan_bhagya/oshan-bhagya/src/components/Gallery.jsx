@@ -40,9 +40,7 @@ const uniqueGalleryImages = galleryImages.filter(
 
 // Show only the requested highlight images
 // include a11 in the highlighted set so it shows alongside the three cards
-const displayGalleryImages = uniqueGalleryImages.filter((item) =>
-  ["/a3.webp", "/a8.webp", "/a9.webp", "/a11.webp"].includes(item.image),
-);
+
 
 export default function Gallery() {
   return (
@@ -57,36 +55,7 @@ export default function Gallery() {
         Every frame tells our story
       </h2>
 
-      <div className="mx-auto mt-12 grid max-w-7xl gap-5 px-6 md:grid-cols-2 xl:grid-cols-4">
-        {displayGalleryImages.map((item, index) => (
-          <motion.figure
-            key={item.image}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: index * 0.06 }}
-            className={`group relative overflow-hidden rounded-[30px] border border-yellow-300/15 bg-white/5 shadow-[0_18px_80px_rgba(0,0,0,0.35)] ${item.tall ? "xl:row-span-2 xl:min-h-[640px]" : "xl:min-h-[300px]"}`}
-          >
-            <img
-              src={item.image}
-              alt={item.title}
-              className={`h-full w-full object-cover transition duration-700 group-hover:scale-110 ${item.tall ? "min-h-[640px]" : "min-h-[300px]"}`}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-            <figcaption className="absolute bottom-5 left-5 right-5 text-left">
-              <p className="text-xs uppercase tracking-[0.35em] text-yellow-300/80">
-                {item.title}
-              </p>
-              <p
-                className="mt-2 text-2xl text-white"
-                style={{ fontFamily: "Cormorant Garamond, serif" }}
-              >
-                {item.caption}
-              </p>
-            </figcaption>
-          </motion.figure>
-        ))}
-      </div>
+      
     </section>
   );
 }
