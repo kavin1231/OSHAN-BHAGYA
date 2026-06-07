@@ -40,22 +40,3 @@ const uniqueGalleryImages = galleryImages.filter(
 
 // Show only the requested highlight images
 // include a11 in the highlighted set so it shows alongside the three cards
-
-
-export default function Gallery() {
-  return (
-    <section id="gallery" className="bg-black py-24 text-center text-white">
-      <p className="text-xs uppercase tracking-[0.4em] text-yellow-300/80">
-        Moments of Love
-      </p>
-      <h2
-        className="mt-3 text-4xl md:text-6xl"
-        style={{ fontFamily: "Cormorant Garamond, serif" }}
-      >
-        Every frame tells our story
-      </h2>
-
-      
-    </section>
-  );
-}
